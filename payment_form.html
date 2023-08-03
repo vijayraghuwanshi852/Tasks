@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="redirect.html">
+    <style>
+        @media screen and (width:600px){
+            body{
+                color: red;
+            }
+        }
+            
+       
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="apple"><h1 style="text-align: center;">Payment Form</h1></div>
+        <h2 class="banana">Information</h2>
+        <p style="font-weight: bold;margin: 23px;">Name: <input type="text" name="name" required placeholder="ramesh kumar"></p>
+        <p>
+          <fieldset style="font-weight: bold;margin: 23px;">
+            <legend>Gender</legend>
+            Male<input type="radio" name="gender" id="male"> Female<input type="radio" name="gender" id="female">
+        </fieldset>
+    </p>
+    <p style="font-weight: bold;margin: 23px;">
+        Address: <textarea name="address" id="address" cols="90px" rows="10px" required> 
+        
+        </textarea>
+    </p>
+      <p style="font-weight: bold;margin: 23px;"> 
+        Phone No. :<input type="number" name="phone" id="phone" required>
+      </p>
+
+      <p style="font-weight: bold;margin: 23px;"> 
+        Email :<input type="email" name="email" id="email" required placeholder="ajdhur@gmail.com">
+      </p>
+
+    <h2 style="font-weight: bold;margin: 23px;">Card information</h2>
+    <p style="font-weight: bold;margin: 23px;">
+        Card type:<select required>
+            <option value="--select a type--">-select a type--</option>
+            <option value="mastercard">mastercard</option>
+            <option value="visa">visa</option>
+            <option value="rupay">rupay</option>
+        </select>
+    </p>
+    <p style="font-weight: bold;margin: 23px;">
+        Card number:<input type="number" name="Card number" id="Card number" required placeholder="1111 2222 3333 4444">
+    </p>
+    <p style="font-weight: bold;margin: 23px;">
+        Cvv:<input type="password" name="Cvv" id="Cvv" required placeholder="123">
+    </p>
+    <p style="font-weight: bold;margin: 23px;">
+    Expiry: <input type="date" name="expiry" id="expiry" required>
+    </p>
+    <p style="font-weight: bold;margin: 23px;">
+        <button onclick="myFunction()">Pay Now</button>
+        <script>
+            function myFunction() {
+              location.replace("file:///C:/Users/Lenovo/OneDrive/Desktop/example/redirect.html")
+            }
+            </script>
+    </p>
+    </form>
+</body>
+</html>
